@@ -102,3 +102,15 @@ align-content:center;
 
 }
 
+.tecnologias__logos{
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  background-color: antiquewhite;
+
+}
+
+.tecnologias__logos img{
+  min-width: 0;
+  max-width: 100%;;
+}
