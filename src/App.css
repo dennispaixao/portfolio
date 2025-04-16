@@ -1,6 +1,15 @@
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Garamond, serif;
+  scroll-behavior: smooth;    
+}
+html{
+  width:100%;
+  height:auto;
+  max-width: 100%;
+
 }
 .App {
   text-align: center;
@@ -75,5 +84,21 @@ start-btn {
   margin-top: 20px;;
   list-style: none;
   text-align: center;
+}
+
+.canvas{
+  width:100%;
+  height:auto;
+  
+  overflow:hidden;
+display:flex;
+position:relative;
+flex-direction:column;
+align-content:center;
+}
+::selection {
+  background-color: #ffcc00; /* Cor de fundo amarela */
+  color: #000000; /* Cor do texto preta */
+
 }
 
