@@ -9,7 +9,6 @@ html{
   width:100%;
   height:auto;
   max-width: 100%;
-
 }
 .App {
   text-align: center;
@@ -79,13 +78,50 @@ start-btn {
   border-radius: 20px;
   background-color: #333;
   color:whitesmoke;
+  font-size: 1.5rem;
 }
 .tecnologias ul, .servicos ul{
-  margin-top: 20px;;
+  margin: 20px;;
   list-style: none;
+  text-align: center;
+
+}
+.servicos ul{
+  margin: 20px auto;
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.servicos ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
+.servicos ul li strong{
+  font-size: 2rem;
+  color:#ffcc00;
+}
+
+.servicos ul li p{
+font-size: 1rem;
+} 
+.servicos ul li img{
+  margin: 20px;
+  width: 280px;
+  height: 220px;
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
 .canvas{
   width:100%;
   height:auto;
@@ -103,6 +139,7 @@ align-content:center;
 }
 
 .tecnologias__logos{
+  margin-top: 20px;
   width:100%;
   display: grid;
   grid-template-columns: repeat(10,1fr);
@@ -113,4 +150,10 @@ align-content:center;
 .tecnologias__logos img{
   min-width: 0;
   max-width: 100%;;
+}
+
+@media screen and (min-width:600px) {
+  .servicos ul{
+    flex-direction: row ;
+  }
 }

@@ -8,7 +8,7 @@ const Greeting = ({children}) => {
 
   useEffect(() => {
 
-    const titleText = '  Oi eu sou Dennis Paixão';
+    const titleText = '  Oi, eu sou Dennis Paixão';
     const subtitleText = ' Sou Web Designer e Programador';
     let index = 0;
 
