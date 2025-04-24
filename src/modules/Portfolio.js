@@ -35,7 +35,7 @@ const Portfolio = () => {
               <img src={bob} alt="Dj bob roots"/>
               </a>
               <h2>DJ Bob page</h2>
-              <p>Página desenvolvida para o Dj Bob, feita em Next JS, otmizada para dispositivos móveis </p>
+              <p>Página desenvolvida para o Dj Bob, feita em Next JS, otimizada para dispositivos móveis </p>
              
             </div>
 
