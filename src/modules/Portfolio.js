@@ -2,6 +2,9 @@ import React from 'react'
 import safyra from "../assets/portfolio/safyra-page-img.jpg";
 import nothing from "../assets/portfolio/landing-nothing-img.jpg";
 import bob from "../assets/portfolio/bob-img.jpg";
+import chuva from "../assets/portfolio/chuva-img.jpg";
+import velha from "../assets/portfolio/velha.jpg";
+import todo from "../assets/portfolio/todo-img.jpg";
 
 const Portfolio = () => {
   return (
@@ -39,7 +42,35 @@ const Portfolio = () => {
              
             </div>
 
-           
+            <div>
+            <a href="https://codepen.io/dennis-paixao/full/YzxpNeZ" rel="noreferrer" target='_blank'>
+              
+              <img src={chuva} alt="chuva"/>
+              </a>
+              <h2>Algoritimo de chuva</h2>
+              <p>Faça chover, controle a velocidade e tamanho dos pingos dinamicamente</p>
+             
+            </div>
+
+            <div>
+            <a href="https://codepen.io/dennis-paixao/full/poZopLM" rel="noreferrer" target='_blank'>
+              
+              <img src={velha} alt="jogo da velha"/>
+              </a>
+              <h2>Jogo da velha com IA</h2>
+              <p>Aqui fiz o famoso jogo da velha no qual você joga contra a máquina</p>
+             
+            </div>
+
+            <div>
+            <a href="https://mytodotypescript.vercel.app/" rel="noreferrer" target='_blank'>
+              
+              <img src={todo} alt="lista de afazeres"/>
+              </a>
+              <h2>Lista de afazeres</h2>
+              <p>Clássica  lista todo feita em Typescript com funcionalidades e armazenamento local</p>
+             
+            </div>
             
            
         </div>
