@@ -11,8 +11,9 @@ html{
   max-width: 100%;
 }
 .App {
+  margin:0;
+  padding:0;
   text-align: center;
-  padding: 100px 20px;
   background-color: #0d1117;
   color: #f0f6fc;
   min-height: 100vh;
@@ -72,7 +73,7 @@ start-btn {
   border-radius: 50%;
 }
 
-.tecnologias, .servicos{
+.tecnologias, .servicos, .Portfolio{
   padding: 20px;
   margin-top: 40px;
   border-radius: 20px;
@@ -152,8 +153,64 @@ align-content:center;
   max-width: 100%;;
 }
 
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-fixo img {
+  width: 50px;
+  height: 50px;
+}
+
+.Portfolio__items{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
+.Portfolio > p{
+ margin: 20px;
+}
+
+.Portfolio__items div{
+  max-width: 200px;
+  background-color: #f0f6fc;
+  color:#333;  
+  border-radius: 20px;
+  padding: 5px;
+}
+.Portfolio__items div h2{
+font-size: 1.5rem;
+margin-top: 5px;
+}
+
+
+.Portfolio__items div p{
+   font-size: 1rem;
+}
+
+.Portfolio__items div img{
+  padding:5px;
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
 @media screen and (min-width:600px) {
   .servicos ul{
     flex-direction: row ;
+  }
+  .whatsapp-fixo img {
+    width: 100px;
+    height: 100px;
   }
 }
