@@ -20,7 +20,7 @@ function App() {
         <Servicos />
         <Portfolio />
         <Rodape />
-        <a href="https://wa.me/11985540245" rel="noreferrer" class="whatsapp-fixo" target="_blank">
+        <a href="https://wa.me/+5511985540245" rel="noreferrer" class="whatsapp-fixo" target="_blank">
           <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" />
         </a>
 
