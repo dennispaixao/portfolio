@@ -31,23 +31,23 @@ const Greeting = ({children}) => {
           } else {
             clearInterval(subtitleInterval);
             setShowSubtitleCursor(false);
+            setGreeting('  Oi, eu sou Dennis Paixão');
+            setSubtitle(' Sou Web Designer e Programador');
           }
         }, 80);
       }
     }, 100);
 
-    const cursorInterval = setInterval(() => {
-      // vazio por enquanto
-    }, 500);
+  
 
     return () => {
+      
       clearInterval(greetingInterval);
-      clearInterval(cursorInterval);
     };
   }, []);
 
   return (
-    <div>
+    <section id="greeting">
         <div>
          <img className='photo-face' src={face} alt="foto" />
           <h1 className="container__greetings">
@@ -62,7 +62,7 @@ const Greeting = ({children}) => {
           </h2>
         </div>
       
-       </div>
+       </section>
   );
 };
 

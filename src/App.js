@@ -5,6 +5,7 @@ import Rodape from './modules/Rodape';
 import Servicos from './modules/Servicos';
 import Tecnologias from './modules/Tecnologias';
 import CanvasComponent from './modules/canvas';
+import Menu from './modules/Menu';
 function App() {
   
 
@@ -15,8 +16,13 @@ function App() {
     
       <main className='container canvas'>
         
-        <Greeting />
-        <Tecnologias />
+        <div class="scroll-indicator" id="scrollIndicator"></div>
+
+
+    
+        <Menu />
+        <Greeting  />
+        <Tecnologias  />
         <Servicos />
         <Portfolio />
         <Rodape />
