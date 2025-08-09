@@ -8,13 +8,13 @@ const Greeting = ({children}) => {
 
   useEffect(() => {
 
-    const titleText = '  Oi, eu sou Dennis Paixão';
-    const subtitleText = ' Sou Web Designer e Programador';
+    const titleText = 'Oi, eu sou Dennis Paixão';
+    const subtitleText = 'Sou Web Designer e Programador';
     let index = 0;
 
     const greetingInterval = setInterval(() => {
       if (index < titleText.length - 1) {
-        setGreeting(prev => prev + titleText[index]);
+        setGreeting(titleText.slice(0,index+2));
   
         index++;
       } else {
@@ -25,14 +25,14 @@ const Greeting = ({children}) => {
         let subIndex = 0;
         const subtitleInterval = setInterval(() => {
           if (subIndex < subtitleText.length - 1) {
-            setSubtitle(prev => prev + subtitleText[subIndex]);
+            setSubtitle(subtitleText.slice(0, subIndex+2));
     
             subIndex++;
           } else {
             clearInterval(subtitleInterval);
             setShowSubtitleCursor(false);
-            setGreeting('  Oi, eu sou Dennis Paixão');
-            setSubtitle(' Sou Web Designer e Programador');
+            setGreeting(titleText);
+            setSubtitle(subtitleText);
           }
         }, 80);
       }
